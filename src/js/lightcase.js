@@ -301,7 +301,8 @@
 					src.density >= density &&
 					// Check viewport width
 					_self._matchMedia()('screen and (min-width:' + src.width + 'px)') &&
-					src.width >= width
+					src.width >= width &&
+					src.width < window.innerWidth
 				) {
 					width = src.width;
 					density = src.density;
